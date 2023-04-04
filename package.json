@@ -1,0 +1,24 @@
+{
+  "name": "EmptyTsProject",
+  "version": "1.0.0",
+  "description": "An empty TS project to be used as a template for creating others",
+  "main": "src/index.ts",
+  "repository": "git@github.com:01YourselF10/EmptyTsProject.git",
+  "author": "Patrick Shu <pat.shu@mail.utoronto.ca>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "buildToSingle": "tsc; ncc build ./single/index.js",
+    "start": "node ./dist/index.js",
+    "dev": "ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@vercel/ncc": "^0.36.1",
+    "ts-node": "^10.9.1"
+  }
+}
